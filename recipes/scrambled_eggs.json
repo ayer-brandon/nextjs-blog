@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "ingredients": [
+        {
+            "name": "Egg",
+            "quantity": "2",
+            "unitOfMeasure": ""
+        },
+        {
+            "name": "Butter",
+            "quantity": "1",
+            "unitOfMeasure": "tablespoon"
+        }
+    ],
+    "steps": [
+        "crack eggs into measuring cup",
+        "whisk eggs",
+        "preheat butter in pan on medium heat",
+        "cook eggs for 5 minutes"
+    ]
+}

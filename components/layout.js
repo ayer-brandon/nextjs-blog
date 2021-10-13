@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/util.module.css'
 import Link from 'next/link'
+import ProfileImage from './image'
 
 const name = 'Brandon Ayer'
 export const siteTitle = 'Next.js Sample Website'
@@ -28,28 +28,17 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
+            <ProfileImage width={144} height={144} name={name}>
+            </ProfileImage>
+
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
             <Link href="/">
               <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
+                <ProfileImage width={108} height={108} name={name}>
+                </ProfileImage>
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
